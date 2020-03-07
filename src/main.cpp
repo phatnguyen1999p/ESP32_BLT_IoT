@@ -75,8 +75,10 @@ void setup() {
 }
 
 void loop() {
+  //lay thoi gian bat dau chay cua vxl
   t = millis();
-  y = sin(t);
+  //dung thoi gian tinh ham sine
+  y = sin(0.01*PI*t);
 
   std::string StringTime((char*)&t,4); 
   std::string StringData((char*)&y,4);
